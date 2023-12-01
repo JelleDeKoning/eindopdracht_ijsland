@@ -116,10 +116,7 @@ font-size: 20px;
   /* Positie*/
 
   text-align:center;
-  /* padding-left: 50%;
-  padding-top:100px;
-  padding-bottom: 0px;
-  margin-bottom: 0px; */
+
 }
 .header h1 {
   
@@ -170,8 +167,8 @@ figure {
 }
 
 .vulkaan {
-  max-width: 100%; /* Zorgt ervoor dat de figuur niet breder wordt dan de viewport */
-  overflow: hidden; /* Verbergt de inhoud die buiten de grenzen van de figuur valt */
+  max-width: 100%; 
+  overflow: hidden; 
 }
 
 .vulkaan img {
@@ -185,7 +182,7 @@ figure {
 figcaption {
   padding: 10px;
   line-height: 1.5;
-  /* position: absolute; */
+  
   bottom: 0;
   right: 0;
   text-align: right;
@@ -194,14 +191,14 @@ figcaption {
 
 .Selectie1 {
   display: flex;
-  align-items: center; /* Om ervoor te zorgen dat de items verticaal worden uitgelijnd */
+  align-items: center; 
   margin-bottom: 100px;
 }
 
 .Selectie1 .Afbeelding {
-  /* Stel de gewenste breedte in voor de afbeelding */
-  width: 500px; /* Pas deze breedte aan naar jouw voorkeur */
-  height: auto; /* Hierdoor wordt de hoogte automatisch aangepast aan de breedte */
+  
+  width: 500px; 
+  height: auto; 
   margin-left: 200px;
   margin-right: 20px;
   border-radius: 10px;
@@ -264,13 +261,21 @@ font-size: 1rem;
 
 .footer {
   display: flex;
-  justify-content: flex-start;
-  gap: 200px;
-  margin-left: 100px;
+  justify-content: space-around
+
 }
 
+footer i {
+font-size: 40px;
+color: rgb(189, 189, 189);
 
+}
 
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
 
 
 
