@@ -179,6 +179,10 @@ figure {
   border-radius: 14px;
 }
 
+figure:hover {
+  transform: translate(1em);
+}
+
 figcaption {
   padding: 10px;
   line-height: 1.5;
@@ -213,14 +217,13 @@ figcaption {
 
 .Selectie2 {
   display: flex;
-  align-items: center; /* Om ervoor te zorgen dat de items verticaal worden uitgelijnd */
+  align-items: center; 
   margin-bottom: 100px;
 }
 
 .Selectie2 .Afbeelding {
-  /* Stel de gewenste breedte in voor de afbeelding */
-  width: 500px; /* Pas deze breedte aan naar jouw voorkeur */
-  height: auto; /* Hierdoor wordt de hoogte automatisch aangepast aan de breedte */
+  width: 500px; 
+  height: auto;
   margin-left: 200px;
   margin-right: 200px;
   border-radius: 10px;
@@ -254,7 +257,7 @@ footer {
 
 
 footer a {
-  text-decoration: none;
+text-decoration: none;
 color:rgb(189, 189, 189);
 font-size: 1rem;
 }
@@ -268,7 +271,6 @@ font-size: 1rem;
 footer i {
 font-size: 40px;
 color: rgb(189, 189, 189);
-
 }
 
 .icons {
