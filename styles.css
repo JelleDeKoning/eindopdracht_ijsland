@@ -61,6 +61,12 @@ color:rgb(15, 128, 0);
 
 }
 
+.active {
+  text-decoration: underline;
+}
+
+
+
 /* HEADER */
 
 .header {
@@ -179,10 +185,6 @@ figure {
   border-radius: 14px;
 }
 
-figure:hover {
-  transform: translate(1em);
-}
-
 figcaption {
   padding: 10px;
   line-height: 1.5;
@@ -279,5 +281,46 @@ color: rgb(189, 189, 189);
   margin-top: 10px;
 }
 
+.icons i:hover {
+  color:rgb(15, 128, 0);
+}
 
+.about {
+  background-color: black;
+  z-index: -1;
+}
 
+.naam {
+  color: whitesmoke;
+  font-family: "neulis-sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  /* margin-left: 40vh;
+  margin-top: 15vh; */
+}
+
+.block {
+  width: 30px;
+  height: 30px;
+  background-color: whitesmoke;
+
+}
+
+.h2 h2 {
+  color: whitesmoke;
+  margin-left: 2vh;
+}
+
+.puntje {
+  display: flex;
+  margin-left: 20vh;
+  margin-top: 10vh;
+}
+
+.header3 {
+  display: flex;
+  align-items: baseline;
+  gap: 10vh;
+  justify-content: center;
+}
