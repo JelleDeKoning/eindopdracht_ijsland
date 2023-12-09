@@ -5,6 +5,10 @@
 
 }
 
+main {
+  flex: 1
+}
+
 
 body {
   margin: 0;
@@ -33,9 +37,31 @@ body {
 
 }
 
+.map { 
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+
+
+}
+
 .content {
   padding-top: 15vh;
 
+}
+
+.content2 {
+  position: relative;
+  padding-bottom: 90vh;
 }
 
 li {
@@ -172,13 +198,16 @@ div.cards {
 
 
 figure {
-  height: 300px;
+  height: 250px;
   width: 400px;
 }
 
 .vulkaan {
   max-width: 100%; 
   overflow: hidden; 
+  border-radius: 14px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .vulkaan img {
@@ -189,13 +218,19 @@ figure {
   border-radius: 14px;
 }
 
+.vulkaan:hover {
+  transform: scale(1.1);
+  border-radius: 14px; 
+  transition: ease 250ms;
+}
+
 figcaption {
   padding: 10px;
   line-height: 1.5;
   
   bottom: 0;
   right: 0;
-  text-align: right;
+  text-align: left;
   opacity: 0.7;
 }
 
@@ -330,61 +365,36 @@ color: rgb(189, 189, 189);
 }
 
 
+details {
 
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
+padding: 10px;
+background: rgba(255, 255, 255, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.9px);
+-webkit-backdrop-filter: blur(5.9px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+width: 200px;
+color: rgb(61, 61, 61);
+border-radius: 14px;
+position: absolute;
 
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+details:hover {
+  cursor: grab;
 }
 
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
+.Reykjavik {
+  margin-left: 40vh;
+  margin-top: 50vh;
+}
+
+.Akureyri {
+margin-top: 10vh;
+margin-left: 50vw;
+}
+
+.Ísafjörður {
+  margin-left: 30vh;
 }
