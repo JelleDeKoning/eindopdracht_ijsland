@@ -6,7 +6,8 @@
 }
 
 main {
-  flex: 1
+  flex: 1;
+  min-height: 100vh;
 }
 
 
@@ -16,7 +17,7 @@ body {
   overflow-x: hidden;
   background-color: whitesmoke;
   overflow-y: auto;
- 
+  min-height: 100vh;
 }
 
 
@@ -190,10 +191,11 @@ padding-top: 1px;
 
 
 
-div.cards {
+section.cards {
   margin-top: 500px;
   display: flex;
   justify-content: center;
+  margin-bottom: 10vh;
 }
 
 
@@ -282,18 +284,15 @@ figcaption {
 
 /* footer */
 
-footer {
-  background-color: grey;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+
 
 .grootfooter {
   font-family: "neulis-sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 50px;
-  color: rgb(97, 97, 97);
+  color: rgb(189, 189, 189);
+  margin-bottom: 0px;
 }
 
 
@@ -305,8 +304,10 @@ font-size: 1rem;
 
 .footer {
   display: flex;
-  justify-content: space-around
-
+  justify-content: space-around;
+  background-color:rgb(151, 151, 151);
+padding-bottom: 10vh;
+padding-top: 10vh;
 }
 
 footer i {
@@ -346,15 +347,12 @@ color: rgb(189, 189, 189);
 
 }
 
-.h2 h2 {
-  color: whitesmoke;
-  margin-left: 2vh;
-}
 
 .puntje {
   display: flex;
   margin-left: 20vh;
   margin-top: 10vh;
+  align-items: Baseline;
 }
 
 .header3 {
@@ -368,17 +366,17 @@ color: rgb(189, 189, 189);
 details {
 
 padding: 10px;
-background: rgba(255, 255, 255, 0.19);
+background: rgba(255, 255, 255, 0.58);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.9px);
--webkit-backdrop-filter: blur(5.9px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.48);
 width: 200px;
-color: rgb(61, 61, 61);
+color: rgb(0, 0, 0);
 border-radius: 14px;
 position: absolute;
-
+list-style: none;
 }
 
 details:hover {
@@ -403,3 +401,67 @@ details:hover {
   transform: scale(1.1);
   transition: ease 250ms;
 }
+
+.listfooter {
+  padding-left: 0px;
+}
+
+.tekst h2 {
+  font-family: "neulis-sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  color: Whitesmoke;
+margin-left: 1vh;
+padding-bottom: 0vh;
+}
+
+.tekst p {
+  font-family: "neulis-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: Whitesmoke;
+  width: 50vh;
+  margin-left: 1vh;
+
+}
+
+.content3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer2 {
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+}
+
+.footer2 a {
+  text-decoration: none;
+  color:rgb(189, 189, 189);
+  font-size: 1rem;
+  }
+
+  .footer2 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+
+  footer i:hover {
+    color:rgb(255, 255, 255);
+  }
+
+  footer a:hover {
+    color:rgb(255, 255, 255);
+  }
+
