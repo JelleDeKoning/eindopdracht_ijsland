@@ -452,9 +452,7 @@ padding-bottom: 0vh;
   details > summary {
     list-style: none;
   }
-  details > summary::-webkit-details-marker {
-    display: none;
-  }
+
 
 
   footer i:hover {
@@ -465,12 +463,131 @@ padding-bottom: 0vh;
     color:rgb(255, 255, 255);
   }
 
+.bento .box {
+  background-color: #001f3f;
+  width: 20vw;
+  height: 40vh;
+  border-radius: 24px;
+}
 
-.lijntje {
-  background-color: black;
-  width: 0.1vw;
-  height: 5vh;
-  margin-left: 27vw;
-  margin-top: 2
+.bento {
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.flexbox .klein  {
+height: 19.5vh;
+border-radius: 24px;
+background-color: #001f3f;
+width: 20vw;
+}
+
+.flexbox {
+  display: flex;
+  width: 20vw;
+  flex-wrap: wrap;
+  gap: 10px
 
 }
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 20vw;
+  height: 40vh;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */ 
+
+  
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  color: white;
+  text-align: center;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #001f3f;
+  border-radius: 24px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #001f3f;
+  border-radius: 24px;
+  color: white;
+  transform: rotateY(180deg);
+
+}
+
+.flip-card-front img {
+  width: 20vw;
+  height: 40vh;
+  border-radius: 24px;
+
+}
+
+.flip-card-front h1 {
+  padding-top: 10vh;
+}
+
+.flip-card-front p {
+  padding-top: 5vh;
+}
+
+.waarschuwing {
+  background-color: orangered;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.tekst {
+  animation: tekstscroll 15s linear;
+}
+
+.tekst p {
+  width: 100%
+}
+
+
+@keyframes tekstscroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+
+
