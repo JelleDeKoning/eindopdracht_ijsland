@@ -563,6 +563,8 @@ width: 20vw;
 
 .flip-card-front p {
   padding-top: 5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .waarschuwing {
@@ -571,23 +573,52 @@ width: 20vw;
   padding-bottom: 3vh;
 }
 
-.tekst {
-  animation: tekstscroll 15s linear;
+.tekst1 {
+  animation: tekstscroll 60s linear infinite;
+  width: 200%;
 }
 
 .tekst p {
-  width: 100%
+  width: 100%;
 }
-
 
 @keyframes tekstscroll {
   from {
-    transform: translateX(0%);
-  }
-  to {
     transform: translateX(100%);
   }
+  to {
+    transform: translateX(-100%);
+  }
 }
+
+.Selectie1 img {
+  animation: 500ms ease-out 0s 1 slideInFromLeft;
+}
+
+.Selectie2 img {
+  animation: 500ms ease-out 500ms 1 slideInFromRight forwards;
+  transform: translateX(150%)
+  
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 
 
